@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Force Tailwind v4 to use class-based dark mode for our toggle button */
+@variant dark (&:is(.dark *));
