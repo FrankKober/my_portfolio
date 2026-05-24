@@ -9,7 +9,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "Shadrack Yegon",
-      role: "Project Manager",
+      role: "Product Specialist",
       company: "IPP",
       text: "Frankline is an exceptional developer. His ability to take complex requirements and turn them into intuitive, fast web applications is unmatched. He was instrumental in upgrading our legacy systems.",
       gradient: "from-blue-400 to-cyan-400",

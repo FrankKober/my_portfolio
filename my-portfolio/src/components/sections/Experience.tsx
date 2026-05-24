@@ -6,11 +6,11 @@ import { FiBriefcase, FiAward, FiCalendar } from "react-icons/fi";
 export default function Experience() {
   const experiences = [
     {
-      title: "Software Engineering Trainee",
+      title: "Software Developer Trainee",
       organization: "PLP Academy",
       duration: "July 2025 - Novermber 2025",
       type: "internship",
-      description: "Assisted in migrating legacy codebases to React and Next.js. Developed and tested RESTful APIs using Node.js and PostgreSQL. Collaborated in agile sprints and participated in daily stand-ups.",
+      description: "Successfully completed the Power Learn Project (PLP) software development program, where I gained hands-on experience in programming, web development, databases, and problem-solving. Worked on practical projects that strengthened my technical skills, teamwork, adaptability, and ability to build real-world digital solutions.",
       icon: <FiBriefcase size={20} className="text-blue-500" />
     },
     {
@@ -18,7 +18,7 @@ export default function Experience() {
       organization: "Teach2give/The Jitu",
       duration: "May 2025 - August 2025",
       type: "training",
-      description: "Completed an intensive software engineering program. Built multiple full-stack applications using the MERN stack and learned modern deployment practices using Git and cloud platforms.",
+      description: "Completed an intensive software engineering program. Built multiple full-stack applications using the MERN stack and learned modern deployment practices using Git and cloud platforms. Gained exposure to real-world development practices, collaboration, and continuous learning in the tech industry.",
       icon: <FiBriefcase size={20} className="text-purple-500" />
     },
     {
@@ -26,7 +26,7 @@ export default function Experience() {
       organization: "Various Projects",
       duration: "2023 - present",
       type: "training",
-      description: "Completed an intensive software engineering program. Built multiple full-stack applications using the MERN stack and learned modern deployment practices using Git and cloud platforms.",
+      description: "Active Open Source Contributor with experience collaborating on projects, contributing code improvements, fixing bugs, and working with version control tools such as Git and GitHub. Passionate about continuous learning, teamwork, and building impactful software solutions for the developer community.",
       icon: <FiBriefcase size={20} className="text-purple-500" />
     },
     {
@@ -34,7 +34,7 @@ export default function Experience() {
       organization: "Self-employed",
       duration: "2023- Present",
       type: "certification",
-      description: "Validated overall understanding of the AWS Cloud platform, covering basic cloud concepts and security. This foundation aids in deploying my full-stack applications.",
+      description: "Freelance Web Developer with experience designing and developing responsive, user-friendly websites tailored to client needs. Skilled in modern web technologies, problem-solving, and delivering functional and visually appealing digital solutions.",
       icon: <FiAward size={20} className="text-emerald-500" />
     }
   ];
