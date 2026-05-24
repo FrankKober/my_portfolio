@@ -98,15 +98,13 @@ export default function Projects() {
                 ) : (
                   <div className={`absolute inset-0 bg-linear-to-br ${project.gradient}`} />
                 )}
-
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
                 
-                {/* Floating Action Buttons on Hover */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-black/30 transition-all duration-300 z-10">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform">
+                {/* Mobile-Friendly Floating Action Buttons */}
+                <div className="absolute inset-0 flex items-center justify-center gap-4 z-10 transition-all duration-300 opacity-100 md:opacity-0 group-hover:opacity-100 bg-black/40 md:bg-transparent group-hover:bg-black/40 backdrop-blur-sm md:backdrop-blur-none group-hover:backdrop-blur-sm">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform shadow-lg">
                     <FiGithub size={20} />
                   </a>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-blue-600 text-white rounded-full hover:scale-110 transition-transform">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-emerald-600 text-white rounded-full hover:scale-110 transition-transform shadow-lg">
                     <FiExternalLink size={20} />
                   </a>
                 </div>
@@ -114,7 +112,7 @@ export default function Projects() {
 
               {/* Project Content */}
               <div className="p-6 flex flex-col grow">
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-6 grow">
