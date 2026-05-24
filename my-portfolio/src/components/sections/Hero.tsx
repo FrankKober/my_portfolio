@@ -104,7 +104,7 @@ export default function Hero() {
               />
               <div className="absolute inset-4 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden shadow-2xl border-2 border-white/40 dark:border-slate-700/50">
                 <Image 
-                  src="/avatar.png" 
+                  src="/Avatar.jpeg" 
                   alt="Frankline Kober" 
                   fill 
                   className="object-cover" 
