@@ -85,26 +85,38 @@ export default function Projects() {
             >
               
               {/* Project Image Area */}
-              <div className="relative h-56 w-full overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <div className="relative h-56 w-full overflow-hidden bg-slate-200 dark:bg-slate-800 p-2 md:p-0">
                 
-                {/* Image or Gradient Logic */}
+                {/* Responsive Image Display:
+                  - Mobile: object-contain, with padding, ensures the full image fits and is visible.
+                  - Desktop (md:): object-cover, edge-to-edge, polished aesthetic.
+                */}
                 {project.image ? (
                   <Image 
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain md:object-cover group-hover:scale-105 transition-transform duration-500 p-2 md:p-0 rounded-xl md:rounded-none"
                   />
                 ) : (
                   <div className={`absolute inset-0 bg-linear-to-br ${project.gradient}`} />
                 )}
                 
-                {/* Mobile-Friendly Floating Action Buttons */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 z-10 transition-all duration-300 opacity-100 md:opacity-0 group-hover:opacity-100 bg-black/40 md:bg-transparent group-hover:bg-black/40 backdrop-blur-sm md:backdrop-blur-none group-hover:backdrop-blur-sm">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform shadow-lg">
+                {/* RESPONSIVE BUTTON PLACEMENT FIX:
+                  - Mobile: Absolute Top Center, Always Visible, resting neatly over contained image.
+                  - Desktop (md:): Inset Flex Center, Hidden, revealed smoothly on mouse hover with blur.
+                */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center justify-center gap-3 z-10 
+                                md:inset-0 md:top-0 md:left-0 md:translate-x-0 md:absolute md:w-full md:h-full md:gap-4 md:flex md:items-center md:justify-center 
+                                transition-all duration-300 
+                                opacity-100 md:opacity-0 group-hover:opacity-100 
+                                bg-transparent md:bg-transparent group-hover:bg-black/40 
+                                backdrop-blur-none md:backdrop-blur-none group-hover:backdrop-blur-sm 
+                                scale-100 md:scale-90 group-hover:scale-100">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 md:p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform shadow-xl md:shadow-lg">
                     <FiGithub size={20} />
                   </a>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-emerald-600 text-white rounded-full hover:scale-110 transition-transform shadow-lg">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 md:p-3 bg-emerald-600 text-white rounded-full hover:scale-110 transition-transform shadow-xl md:shadow-lg">
                     <FiExternalLink size={20} />
                   </a>
                 </div>
