@@ -17,14 +17,15 @@ type Project = {
 
 export default function Projects() {
   const projects: Project[] = [
+
     {
-      title: "Task Management System",
-      description: "A comprehensive university-level collaboration platform. Features include real-time task assignments, progress tracking, role-based access control, and team workspaces.",
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-      gradient: "from-blue-500 to-cyan-400", // Fallback gradient
-      image: "/Tasky.png", 
-      githubUrl: "https://github.com/FrankKober/Tasky-V2",
-      liveUrl: "https://tasky-v2-three.vercel.app/",
+      title: "Cikars",
+      description: "A sleek, high-performance digital platform engineered to streamline workflows and deliver an intuitive user experience. Built with clean architecture, responsive design, and robust functionality, it combines modern UI/UX principles with scalable performance to effortlessly solve complex user challenges.",
+      techStack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+      gradient: "from-orange-400 to-pink-500",
+      image: "/Cikars.png", 
+      githubUrl: "https://github.com/FrankKober/CIKARS_AUTO.",
+      liveUrl: "https://cikars-auto-z3l8-1myb0rwfl-676866s-projects.vercel.app/",
     },
     {
       title: "Barbershop Booking App",
@@ -36,6 +37,16 @@ export default function Projects() {
       liveUrl: "https://barbershop-booking-plum.vercel.app/",
     },
     {
+      title: "Task Management System",
+      description: "A comprehensive university-level collaboration platform. Features include real-time task assignments, progress tracking, role-based access control, and team workspaces.",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      gradient: "from-blue-500 to-cyan-400", // Fallback gradient
+      image: "/Tasky.png", 
+      githubUrl: "https://github.com/FrankKober/Tasky-V2",
+      liveUrl: "https://tasky-v2-three.vercel.app/",
+    },
+    
+    {
       title: "Zaph Travels",
       description: "A dynamic travel and tour agency platform. Users can browse curated destinations, book tour packages, and read travel guides with an optimized, image-rich user interface.",
       techStack: ["Next.js", "React", "MySQL", "Tailwind CSS"],
@@ -44,15 +55,7 @@ export default function Projects() {
       githubUrl: "https://github.com/FrankKober/zaph-safaris",
       liveUrl: "https://zaph-safaris.vercel.app/",
     },
-    {
-      title: "Blogit",
-      description: "A modern, high-performance blogging platform. Includes rich-text editing, categorized feeds, user authentication, and an SEO-optimized architecture for content creators.",
-      techStack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-      gradient: "from-orange-400 to-pink-500",
-      image: "/Blogit.png", 
-      githubUrl: "https://github.com/FrankKober/blogitapp",
-      liveUrl: "https://blogitapp.vercel.app/blogs",
-    },
+    
   ];
 
   return (
