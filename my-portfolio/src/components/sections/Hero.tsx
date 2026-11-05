@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
   const [text, setText] = useState("");
-  const fullText = "Full-Stack Developer";
+  const fullText = "Software Engineer, Full-Stack Developer, IT Systems Engineer and Data Analyst.";
   
   useEffect(() => {
     let i = 0;
@@ -60,9 +60,9 @@ export default function Hero() {
             />
           </h2>
 
-          <p className="text-slate-600 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 text-lg">
-            I build exceptional and accessible digital experiences. Passionate about AI, modern web technologies, and crafting beautiful software.
-          </p>
+          <p className="mt-4 text-slate-600 dark:text-slate-500 max-w-lg mx-auto lg:mx-0 text-lg">
+  I build exceptional and accessible digital experiences. Passionate about AI, modern web technologies, and crafting beautiful software.
+</p>
 
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -107,6 +107,7 @@ export default function Hero() {
                   src="/Avatar.jpeg" 
                   alt="Frankline Kober" 
                   fill 
+                  sizes="(max-width: 768px) 288px, 384px"
                   className="object-cover" 
                   priority
                 />

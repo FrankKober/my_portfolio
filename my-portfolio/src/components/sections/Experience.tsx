@@ -16,7 +16,7 @@ export default function Experience() {
     {
       title: "Full-Stack Developer Trainee",
       organization: "Teach2give/The Jitu",
-      duration: "May 2025 - August 2025",
+      duration: "May 2025 - July 2025",
       type: "training",
       description: "Completed an intensive software engineering program. Built multiple full-stack applications using the MERN stack and learned modern deployment practices using Git and cloud platforms. Gained exposure to real-world development practices, collaboration, and continuous learning in the tech industry.",
       icon: <FiBriefcase size={20} className="text-purple-500" />
@@ -32,7 +32,7 @@ export default function Experience() {
     {
       title: "Freelance Web Developer",
       organization: "Self-employed",
-      duration: "2023- Present",
+      duration: "(August 2026 - Present)",
       type: "certification",
       description: "Freelance Web Developer with experience designing and developing responsive, user-friendly websites tailored to client needs. Skilled in modern web technologies, problem-solving, and delivering functional and visually appealing digital solutions.",
       icon: <FiAward size={20} className="text-emerald-500" />

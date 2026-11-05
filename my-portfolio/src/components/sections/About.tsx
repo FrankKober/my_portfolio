@@ -49,18 +49,15 @@ export default function About() {
             className="space-y-6 text-slate-600 dark:text-slate-300 text-lg leading-relaxed"
           >
             <p>
-              Hello! I am <strong className="text-slate-900 dark:text-white font-semibold">Frankline Kober</strong>, an IT graduate and a software engineer specializing in developing user-centric and dependable 
-web and mobile applications. I also do data entry and analysis.    
+              Hello! I am <strong className="text-slate-900 dark:text-white font-semibold">Frankline Kober</strong>, an Information Technology graduate with a strong interest in software engineering, IT systems, data, and emerging technologies.
+  I enjoy building practical technology solutions, understanding how systems work, identifying technical challenges, and finding efficient ways to solve them.     
             </p> 
             
-           <p> My expertise lies in writing clean code, designing seamless user interfaces, and implementing secure, scalable backend systems. I am 
-also deeply interested in emerging technologies, particularly artificial intelligence (AI), and how they 
-can be applied to improve functionality, performance, and innovation across different domains.
+           <p> I have developed hands-on experience working with modern web technologies, backend development, databases, APIs, and software development tools. I am equally interested in IT infrastructure, technical support, system administration, and the role technology plays in driving organisational efficiency.
+I believe that technology is most valuable when it solves a problem, simplifies a process, or creates an opportunity for growth.
             </p>
             
-             <p> My journey in tech started with a fascination for how things work under the hood and I 
-am committed to continuous learning and professional growth, driven by a passion for delivering 
-impactful, real-world solutions.
+             <p> I am passionate about using technology to solve real-world problems, improve business operations, and create meaningful digital experiences. My journey in Information Technology has allowed me to explore different areas of the technology landscape, from software development and database management to IT systems, data analysis, and digital transformation.
             </p>
             
           </motion.div>
