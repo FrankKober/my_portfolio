@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FiDownload, FiMail, FiArrowRight, FiArrowDown } from "react-icons/fi";
+import { FiDownload, FiMail, FiArrowDown } from "react-icons/fi";
 import Image from "next/image";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150g-blue-500/20 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 bg-blue-500/20 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         
@@ -44,14 +44,14 @@ export default function Hero() {
             Welcome to my portfolio
           </motion.p>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-[1.2] mb-2">
             Hi, I&apos;m <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-600  to-teal-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-teal-500">
               Frankline Kober
             </span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-slate-700 dark:text-slate-300 h-10">
+          <h2 className="text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-300 min-h-12">
             {text}
             <motion.span 
               animate={{ opacity: [0, 1, 0] }}
@@ -60,9 +60,9 @@ export default function Hero() {
             />
           </h2>
 
-          <p className="mt-4 text-slate-600 dark:text-slate-500 max-w-lg mx-auto lg:mx-0 text-lg">
-  I build exceptional and accessible digital experiences. Passionate about AI, modern web technologies, and crafting beautiful software.
-</p>
+          <p className="text-slate-600 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 text-lg">
+            I build exceptional and accessible digital experiences. Passionate about AI, modern web technologies, and crafting beautiful software.
+          </p>
 
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -92,7 +92,6 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="relative flex justify-center lg:justify-end"
         >
-          {/* Wrap both items in a flex column so they stack neatly */}
           <div className="flex flex-col items-center gap-10">
             
             {/* The Avatar */}
@@ -114,7 +113,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Moved Scroll Down Indicator */}
+            {/* Scroll Down Indicator */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
